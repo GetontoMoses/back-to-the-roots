@@ -11,6 +11,17 @@ class Student():
         print (f"I am taking {self.major}")
 
 
-Muut = Student("Muthaka",23,"ACS")
+class Senior(Student):
+    def __init__(self, name, age, major):
+        super().__init__(name, age, major)
+        
+        super().__init__(self,name,age,major)
+        self.State_status="senior"
+
+    def student_status(self):
+        print("I am a senior student")
+
+Muut = Student("Muthaka", 23, "ACS")
 Muut.create_student()
 Muut.academics()
+Muut.student_status()
