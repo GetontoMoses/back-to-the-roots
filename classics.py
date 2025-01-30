@@ -16,7 +16,7 @@ class Senior(Student):
         super().__init__(name, age, major)
         
         super().__init__(self,name,age,major)
-        self.State_status="senior"
+        self.st_status="senior"
 
     def student_status(self):
         print("I am a senior student")
@@ -24,4 +24,6 @@ class Senior(Student):
 Muut = Student("Muthaka", 23, "ACS")
 Muut.create_student()
 Muut.academics()
-Muut.student_status()
+
+
+
