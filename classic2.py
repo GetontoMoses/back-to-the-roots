@@ -8,3 +8,7 @@ class Dog():
         
     def sit(self):
         print(f"{self.name} is now sitted")
+        
+class Escobar(Dog):
+    def __init__(self, name, age):
+        super().__init__(name, age)
