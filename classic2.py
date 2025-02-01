@@ -12,3 +12,6 @@ class Dog():
 class Escobar(Dog):
     def __init__(self, name, age):
         super().__init__(name, age)
+        
+my_doug = Dog("bravo",23)
+my_doug.roll_over()
